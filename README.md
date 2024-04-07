@@ -55,3 +55,27 @@ The [misCommands.sh](./bash_shell_miscCommands.sh) program uses echo to first pr
 First, the ```chmod 555``` command is used on the 'bash_shell_fileSystemNavigation.sh' file and then ```ls -l``` is used to display the permissions after the change was made.  The permissions shown are ```-r-xr-xr-x``` which means that the owner 'root', group 'root', and all others have -r-x read and execute permissions but not write.  Then, the ```chmod 777``` command is used to change permissions and ```ls -l``` to display the files and permissions. The permissions are now```-rwxrwxrwx``` which means that the all users have full read, write, and execute permissions.
 
 ![permissions screenshot](./screenshots/permissions.png)
+
+### Terminal - Redirection
+This part uses terminal commands to adjust the view of files.
+- ```sort < name.txt``` sorted the names in the file.
+- ```ls -l | less``` piped the result of ls -l into a view where it can be viewed by pages.  This would be helpful with very long lists.
+- I attempted to pipe a manual into less, but it looks the same.  
+- Lastly, I used grep to search and pipe the results into less with various options just to see what would happen.  Again, this would be useful when there are many results.
+
+![redirection screenshot](./screenshots/redirection.png)
+
+### Terminal - Head and Tail Files
+Used head and tail commands to view the first part and last part of the syslog file. Then compared it to what was in the logs from looking at them in the logs application.
+![syslog head and tail screenshot](./screenshots/headAndTail_syslog.png)
+![logs app screenshot](./screenshots/logs.png)
+
+### Disk Utilities
+Using the terminal ```sudo fdisk -l``` command lists available disk devices and partitions on the system.  I have 3 different devices listed currently of type: BIOS boot, EFI System, and Linux filesystem.
+![device screenshot](./screenshots/disk_a.png)
+
+Using the ```df``` command, the various mounts are listed.
+![mounts screenshot](./screenshots/disk_b.png)
+
+Using the Disk Usage Analyzer app displays results of the Home Folder.
+![disk usage analyzer screenshot](./screenshots/disk_usage.png)
