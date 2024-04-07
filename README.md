@@ -47,9 +47,9 @@ Using the terminal to view files using various commands and options.
 ![file command screenshot](./screenshots/partE.png)
 
 ### Bash Shell - Misc. Commands
-The [misCommands.sh](./bash_shell_miscCommands.sh) program uses echo to first print a string and int.  Then echo is used to print the various parameters that are assigned to the variables using ```$0```, ```$1```, and ```$2```.
+The [miscCommands.sh](./bash_shell_miscCommands.sh) program uses echo to first print a string and int.  Then echo is used to print the various parameters that are assigned to the variables using ```$0```, ```$1```, and ```$2```.
 
-![misc commands screenshot](./bash_shell_miscCommands.sh)
+![misc commands screenshot](./screenshots/misc_commands_part1.png)
 
 ### Bash Shell - Permissions
 First, the ```chmod 555``` command is used on the 'bash_shell_fileSystemNavigation.sh' file and then ```ls -l``` is used to display the permissions after the change was made.  The permissions shown are ```-r-xr-xr-x``` which means that the owner 'root', group 'root', and all others have -r-x read and execute permissions but not write.  Then, the ```chmod 777``` command is used to change permissions and ```ls -l``` to display the files and permissions. The permissions are now```-rwxrwxrwx``` which means that the all users have full read, write, and execute permissions.
